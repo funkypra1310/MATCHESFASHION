@@ -49,13 +49,14 @@ public class MatchesTest
 
         StringBuilder reverse = new StringBuilder();
 
-        for(int i=0; i < str.length() ; i++)
+        for(int i=0; i < str.length()-1 ; i++)
         {
             System.out.println(reverse.toString()+sb);
             reverse.append(sb.charAt(0));
             sb.delete(0,1);
             sb.reverse();
         }
+        reverse.append(sb.charAt(0));
         return reverse.toString();
     }
 
